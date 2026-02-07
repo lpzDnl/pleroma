@@ -1,0 +1,37 @@
+# Environment files (contain secrets)
+.env
+home/.env
+vps/.env
+
+# WireGuard private keys
+**/wireguard/wg0.conf
+**/wireguard/*privatekey*
+**/wireguard/*presharedkey*
+
+# Pi-hole runtime data
+**/pihole/pihole-FTL.db
+**/pihole/gravity.db
+
+# Docker runtime
+docker-compose.override.yml
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Backup archives (may contain sensitive data)
+backups/
+*.tar.gz
+*.tar.bz2
+
+# Incident reports (may contain sensitive details)
+docs/incidents/*.md
+!docs/incidents/TEMPLATE.md
